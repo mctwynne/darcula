@@ -160,10 +160,11 @@ hi! link lCursor Cursor
 hi! link CursorIM Cursor
 hi! link CursorColumn CursorLine
 call s:Hi('CursorLine', s:p.null, s:p.cursorLine, 'NONE')
-call s:Hi('DiffAdd', s:p.null, s:p.diffAdd)
-call s:Hi('DiffChange', s:p.null, s:p.diffChange)
-call s:Hi('DiffDelete', s:p.null, s:p.diffDelete)
-call s:Hi('DiffText', s:p.null, s:p.diffText)
+call s:Hi('DiffAdded', s:p.UIGreen)
+call s:Hi('DiffChange', s:p.UIBlue)
+call s:Hi('DiffChange', s:p.null, s:p.UIBlue)
+call s:Hi('DiffRemoved', s:p.ANSIBrightRed)
+call s:Hi('DiffText', s:p.fg)
 hi! link Directory NormalFg
 hi! link EndOfBuffer NonText
 call s:Hi('ErrorMsg', s:p.errorMsg)
